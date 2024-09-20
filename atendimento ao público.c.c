@@ -3,7 +3,7 @@
 
 int main () {
     char nome[20], course[20], course2[20], course1[20], completename[40], mom[20], dad[20];
-    float cpf, cpf2, phone;
+    char cpf[15], cpf2[15], phone[15];
     int number, answer;
     printf("----------------------------------------------------------------------------");
     printf("\n| Hello outsider! Thank you for contacting us. Are you registered?       |");
@@ -16,7 +16,7 @@ int main () {
             scanf("%s", nome);
             printf("\nHi %s", nome);
             printf(". Now I need you to inform me your social security number: ");
-            scanf("%f", &cpf);
+            scanf("%s", cpf);
             printf("\nNow, Let's see what are your intentions...");
             printf("\n----------------------------------------------------------------------------");
             printf("\nPlease, select one of these numbers depending on your intentions: ");
@@ -49,13 +49,13 @@ int main () {
             printf("\nWhat's your whole name?");
             scanf("%s", completename);
             printf("\nWhat is your social security number?");
-            scanf("%f", &cpf2);
+            scanf("%s", cpf2);
             printf("\nWhat is the name of your mother?");
             scanf("%s", mom);
             printf("\nWhat is the name of your father?");
             scanf("%s", dad);
             printf("\nAnd last but not least, what is your phone number? ");
-            scanf("%f", &phone);
+            scanf("%s", phone);
             printf("\nCongratulations! You've been officially registered!");
 
     }
@@ -63,3 +63,4 @@ int main () {
 
 return 0;
 }
+
